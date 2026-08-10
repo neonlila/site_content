@@ -1,0 +1,9 @@
+name: tutorial/collapse-element
+typeName: tutorial_collapseelement
+group: Simple Elements
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

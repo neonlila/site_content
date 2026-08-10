@@ -1,0 +1,9 @@
+name: tutorial/button-element
+typeName: tutorial_buttonelement
+group: Simple Elements
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

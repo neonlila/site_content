@@ -1,0 +1,9 @@
+name: tutorial/badge-element
+typeName: tutorial_badgeelement
+group: Simple Elements
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

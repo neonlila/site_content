@@ -1,0 +1,9 @@
+name: tutorial/simple-card
+typeName: tutorial_simplecard
+group: Simple Elements
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

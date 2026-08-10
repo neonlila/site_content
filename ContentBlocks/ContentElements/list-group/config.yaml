@@ -1,0 +1,9 @@
+name: tutorial/list-group
+typeName: tutorial_listgroup
+group: Simple Elements
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
