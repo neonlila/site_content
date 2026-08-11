@@ -3,12 +3,27 @@
   <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-08-10T20:11:37+00:00" product-name="tutorial/button-element">
     <header/>
     <body>
-      <trans-unit id="title">
-        <source>Button Element</source>
-      </trans-unit>
-      <trans-unit id="description">
-        <source>Description for Content Element tutorial/button-element</source>
-      </trans-unit>
-    </body>
+			<trans-unit id="title" xml:space="preserve">
+				<source>Button</source>
+			</trans-unit>
+			<trans-unit id="description" xml:space="preserve">
+				<source>Add a custom button with additional styling</source>
+			</trans-unit>
+			<trans-unit id="header.label" xml:space="preserve">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="button_style.label" xml:space="preserve">
+				<source>Button style</source>
+			</trans-unit>
+      <trans-unit id="button_size.label" xml:space="preserve">
+				<source>Button size</source>
+			</trans-unit>
+			<trans-unit id="button_text.label" xml:space="preserve">
+				<source>Button text</source>
+			</trans-unit>
+      <trans-unit id="badge_link.label" xml:space="preserve">
+				<source>Badge link</source>
+			</trans-unit>
+		</body>
   </file>
 </xliff>

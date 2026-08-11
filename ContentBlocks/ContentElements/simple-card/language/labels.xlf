@@ -3,12 +3,45 @@
   <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-08-10T20:10:39+00:00" product-name="tutorial/simple-card">
     <header/>
     <body>
-      <trans-unit id="title">
-        <source>Simple Card</source>
-      </trans-unit>
-      <trans-unit id="description">
-        <source>Description for Content Element tutorial/simple-card</source>
-      </trans-unit>
+			<trans-unit id="title" xml:space="preserve">
+				<source>Card Group</source>
+			</trans-unit>
+			<trans-unit id="description" xml:space="preserve">
+				<source>Add a group with several cards</source>
+			</trans-unit>
+			<trans-unit id="header.label" xml:space="preserve">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="card_group_item.label" xml:space="preserve">
+				<source>Card group items</source>
+			</trans-unit>
+			<trans-unit id="card_settings.label" xml:space="preserve">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="card_settings.card_alignment.label" xml:space="preserve">
+				<source>Alignment</source>
+			</trans-unit>
+			<trans-unit id="card_settings.card_items.label" xml:space="preserve">
+				<source>Items per row</source>
+			</trans-unit>
+			<trans-unit id="card_group_item.card_image.label" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="card_group_item.card_title.label" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="card_group_item.card_bodytext.label" xml:space="preserve">
+				<source>Bodytext</source>
+			</trans-unit>
+			<trans-unit id="card_group_item.card_link.label" xml:space="preserve">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="card_group_item.link_title.label" xml:space="preserve">
+				<source>Link title</source>
+			</trans-unit>
+			<trans-unit id="readmore" xml:space="preserve">
+				<source>Read more</source>
+			</trans-unit>
     </body>
   </file>
 </xliff>

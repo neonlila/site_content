@@ -7,3 +7,25 @@ fields:
   -
     identifier: header
     useExistingField: true
+  - identifier: button_style
+    type: Select
+    renderType: selectSingle
+    items: 
+      - label: 'Basic'
+        value: 'basic'
+      - label: 'Outline'
+        value: 'outline'
+  - identifier: button_size
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Normal'
+        value: 'md'
+      - label: 'Small'
+        value: 'sm'
+      - label: 'Large'
+        value: 'lg'
+  - identifier: button_text
+    type: Text
+  - identifier: button_link
+    type: Link

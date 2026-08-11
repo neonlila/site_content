@@ -4,6 +4,27 @@
     data-namespace-typo3-fluid="true"
 >
 
-Frontend template for Content Block: tutorial/badge-element<br>
-{data.header}
+<f:asset.css identifier="badge-css" href="{cb:assetPath()}/badge.css"/>
+
+<f:switch expression="{data.badge_style}">
+    <f:case value="badge2">
+        <span class="badge badge-pill badge-primary">{data.badge_text}</span>
+    </f:case>
+    <f:case value="badge3">
+        <button type="button" class="btn btn-primary">
+            {data.badge_text} <span class="badge badge-light">{data.badge_count}</span>
+        </button>
+    </f:case>
+    <f:case value="badge4">
+        <f:link.typolink parameter="{data.badge_link}" class="badge badge-primary">
+            {data.badge_text}
+        </f:link.typolink>
+    </f:case>
+
+    <f:defaultCase>
+        <p>{data.badge_text} <span class="badge badge-primary">{data.badge_count}</span></hp>
+    </f:defaultCase>
+
+</f:switch>
+
 </html>

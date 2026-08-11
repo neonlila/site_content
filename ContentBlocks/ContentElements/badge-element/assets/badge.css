@@ -1,0 +1,14 @@
+.badge {
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.badge-primary {
+    background-color: blue;
+    color: white;
+}
+
+.badge-light {
+    background-color: white;
+    color: black;
+}

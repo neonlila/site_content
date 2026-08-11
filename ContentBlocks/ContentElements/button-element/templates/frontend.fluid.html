@@ -4,6 +4,14 @@
     data-namespace-typo3-fluid="true"
 >
 
-Frontend template for Content Block: tutorial/button-element<br>
-{data.header}
+<f:asset.css identifier="button-css" href="{cb:assetPath()}/button.css"/>
+
+<f:link.typolink parameter="{data.button_link}" class="btn btn-{data.button_style} btn-{data.button_size}">
+    {data.button_text}
+</f:link.typolink>
+
+
+# TODO
+# color picker for background color
+
 </html>

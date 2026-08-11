@@ -4,6 +4,51 @@
     data-namespace-typo3-fluid="true"
 >
 
-Frontend template for Content Block: tutorial/simple-card<br>
-{data.header}
+<f:asset.css identifier="card-css" href="{cb:assetPath()}/card.css"/>
+
+<div class="card_element">
+    <f:if condition="{data.card_group_item}">
+        <div class="card-group-element card-group-element-align-{data.card_settings.card_alignment} card-group-element-columns-{data.card_settings.card_items}">
+            <f:for each="{data.card_group_item}" as="item" iteration="iteration">
+
+                <div class="card-group-element-item">
+                    <div class="card">
+                        <f:if condition="{item.card_image.0}">
+                            <div class="card-img-top">
+                                <f:render partial="Link" arguments="{link: item.link, link_title: item.title}" contentAs="content">
+                                    <f:image src="{item.card_image.0.uid}" treatIdAsReference="1"/>
+                                </f:render>
+                            </div>
+                        </f:if>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <f:render partial="Link" arguments="{link: item.link, link_title: item.title}" contentAs="content">
+                                    {item.card_title}
+                                </f:render>
+                            </h3>
+                            <f:if condition="{item.card_bodytext}">
+                                <f:format.raw>{item.card_bodytext}</f:format.raw>
+                            </f:if>
+                        </div>
+                        <f:if condition="{item.card_link}">
+                            <f:variable name="link_title">
+                                <f:if condition="{item.link_title}">
+                                    <f:then>{item.link_title}</f:then>
+                                </f:if>
+                            </f:variable>
+                            <div class="card-footer">
+                                <f:link.typolink parameter="{item.card_link}" class="btn" title="{link_title}">
+                                    <span class="btn-text">
+                                        {link_title}
+                                    </span>
+                                </f:link.typolink>
+                            </div>
+                        </f:if>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </f:if>
+</div>
+
 </html>

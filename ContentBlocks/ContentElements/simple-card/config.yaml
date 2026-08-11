@@ -7,3 +7,52 @@ fields:
   -
     identifier: header
     useExistingField: true
+  - identifier: card_settings
+    type: FlexForm
+    fields:
+      - identifier: card_alignment
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Left'
+            value: 'left'
+          - label: 'Center'
+            value: 'center'
+          - label: 'Right'
+            value: 'right'
+      - identifier: card_items
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: '1'
+            value: '1'
+          - label: '2'
+            value: '2'
+          - label: '3'
+            value: '3'
+          - label: '4'
+            value: '4'
+  - identifier: card_group_item
+    type: Collection
+    labelField: card_title
+    minitems: 1
+    fields:
+      - identifier: card_image
+        type: File
+      - identifier: card_title
+        type: Text
+      - identifier: card_bodytext
+        type: Textarea
+        enableRichtext: true
+      - identifier: palette_link
+        type: Palette
+        fields:
+          - identifier: card_link
+            type: Link
+            allowedTypes:
+              - page
+              - url
+              - file
+          - identifier: link_title
+            type: Text
+            eval: 'trim'  

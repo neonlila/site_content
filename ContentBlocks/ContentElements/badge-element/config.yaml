@@ -7,3 +7,23 @@ fields:
   -
     identifier: header
     useExistingField: true
+  - identifier: badge_style
+    type: SelectText
+    default: badge1
+    items:
+      - label: 'Simple badge'
+        value: 'badge1'
+      - label: 'Badge pill'
+        value: 'badge2'
+      - label: 'Badge Button'
+        value: 'badge3'
+      - label: 'Badge Link'
+        value: 'badge4'  
+  - identifier: badge_text
+    type: Text
+  - identifier: badge_count
+    type: Text  
+  - identifier: badge_link
+    type: Link      
+    displayCond: 'FIELD:badge_style:=:badge4'     
+    
