@@ -3,12 +3,34 @@
   <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-08-10T20:16:54+00:00" product-name="tutorial/list-group">
     <header/>
     <body>
-      <trans-unit id="title">
+
+    <trans-unit id="title" xml:space="preserve">
         <source>List Group</source>
       </trans-unit>
-      <trans-unit id="description">
-        <source>Description for Content Element tutorial/list-group</source>
+      <trans-unit id="description" xml:space="preserve">
+        <source>Add a group with several list elements</source>
       </trans-unit>
-    </body>
+      <trans-unit id="header.label" xml:space="preserve">
+        <source>Header</source>
+      </trans-unit>
+      <trans-unit id="list_group_item.label" xml:space="preserve">
+        <source>List group items</source>
+      </trans-unit>
+      <trans-unit id="list_settings.label" xml:space="preserve">
+        <source>Settings</source>
+      </trans-unit>
+      <trans-unit id="list_settings.list_alignment.label" xml:space="preserve">
+        <source>Alignment</source>
+      </trans-unit>
+      <trans-unit id="list_settings.list_items.label" xml:space="preserve">
+        <source>Items per row</source>
+      </trans-unit>
+      <trans-unit id="list_group_item.list_title.label" xml:space="preserve">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="list_group_item.list_badge.label" xml:space="preserve">
+        <source>Badge</source>
+      </trans-unit>
+    </body>  
   </file>
 </xliff>

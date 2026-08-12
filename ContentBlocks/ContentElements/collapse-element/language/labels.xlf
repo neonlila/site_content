@@ -2,13 +2,25 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-08-10T20:14:24+00:00" product-name="tutorial/collapse-element">
     <header/>
-    <body>
-      <trans-unit id="title">
+   <body>
+    <trans-unit id="title" xml:space="preserve">
         <source>Collapse</source>
       </trans-unit>
-      <trans-unit id="description">
-        <source>Description for Content Element tutorial/collapse-element</source>
+      <trans-unit id="description" xml:space="preserve">
+        <source>Add a group with collapsable items</source>
       </trans-unit>
-    </body>
+      <trans-unit id="header.label" xml:space="preserve">
+        <source>Header</source>
+      </trans-unit>
+      <trans-unit id="collapse_group_item.label" xml:space="preserve">
+        <source>Collapse items</source>
+      </trans-unit>
+      <trans-unit id="collapse_group_item.collapse_title.label" xml:space="preserve">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="collapse_group_item.collapse_text.label" xml:space="preserve">
+        <source>Text</source>
+      </trans-unit>
+    </body>  
   </file>
 </xliff>

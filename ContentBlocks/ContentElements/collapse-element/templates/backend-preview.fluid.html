@@ -11,7 +11,9 @@
 </f:section>
 
 <f:section name="Content">
-    {data.header}
+    <f:for each="{data.collapse_group_item}" as="item">
+        {item.collapse_title}
+    </f:for>
 </f:section>
 
 <f:comment>

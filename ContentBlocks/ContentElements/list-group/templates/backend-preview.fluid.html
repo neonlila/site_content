@@ -11,7 +11,9 @@
 </f:section>
 
 <f:section name="Content">
-    {data.header}
+    <f:for each="{data.list_group_item}" as="item">
+        {item.list_title}
+    </f:for>
 </f:section>
 
 <f:comment>

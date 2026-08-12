@@ -7,3 +7,37 @@ fields:
   -
     identifier: header
     useExistingField: true
+  - identifier: list_settings
+    type: FlexForm
+    fields:
+      - identifier: list_alignment
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Left'
+            value: 'left'
+          - label: 'Center'
+            value: 'center'
+          - label: 'Right'
+            value: 'right'
+      - identifier: list_items
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: '1'
+            value: '1'
+          - label: '2'
+            value: '2'
+          - label: '3'
+            value: '3'
+          - label: '4'
+            value: '4'
+  - identifier: list_group_item
+    type: Collection
+    labelField: list_title
+    minitems: 1
+    fields:
+      - identifier: list_title
+        type: Text
+      - identifier: list_badge
+        type: Text

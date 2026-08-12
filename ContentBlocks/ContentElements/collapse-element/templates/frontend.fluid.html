@@ -4,6 +4,19 @@
     data-namespace-typo3-fluid="true"
 >
 
-Frontend template for Content Block: tutorial/collapse-element<br>
-{data.header}
+<f:asset.css identifier="collapse-css" href="{cb:assetPath()}/collapse.css"/>
+
+<f:for each="{data.collapse_group_item}" as="item">
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapse-{item.uid}" role="button" aria-expanded="false" aria-controls="collapse-{item.uid}">
+        {item.collapse_title}
+      </a>
+    </p>
+    <div class="collapse" id="collapse-{item.uid}">
+      <div class="card card-body">
+        {item.collapse_text}
+      </div>
+    </div>
+</f:for>
+
 </html>

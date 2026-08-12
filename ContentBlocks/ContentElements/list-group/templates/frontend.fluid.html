@@ -4,6 +4,15 @@
     data-namespace-typo3-fluid="true"
 >
 
-Frontend template for Content Block: tutorial/list-group<br>
-{data.header}
+<f:asset.css identifier="list-css" href="{cb:assetPath()}/list.css"/>
+
+<ul class="list-group">
+    <f:for each="{data.list_group_item}" as="item">
+        <li class="list-group-item d-flex justify-content-between {item.list_alignment}">
+          {item.list_title}
+          <span class="badge badge-primary badge-pill">{item.list_badge}</span>
+        </li>
+    </f:for>
+</ul>
+
 </html>

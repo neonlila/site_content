@@ -7,3 +7,16 @@ fields:
   -
     identifier: header
     useExistingField: true
+  - identifier: collapse_group_item
+    type: Collection
+    labelField: collapse_title
+    minitems: 1
+    appearance:
+      collapseAll: true
+    fields:
+      - identifier: collapse_title
+        type: Text
+      - identifier: collapse_text
+        type: Textarea
+        enableRichtext: true
+
