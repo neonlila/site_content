@@ -64,3 +64,4 @@ or
 [ ] create some advanced elements like - slider, accordeon etc.
 [ ] add locallang.xlf for german language
 [ ] columns elements
+[ ] some other ideas

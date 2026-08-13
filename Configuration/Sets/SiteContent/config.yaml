@@ -7,4 +7,4 @@ dependencies:
   - typo3/fluid-styled-content-css
 
 settings:
-  # ... rest of your settings
+  # ... rest of your settings 
