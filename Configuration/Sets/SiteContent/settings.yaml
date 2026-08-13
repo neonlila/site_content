@@ -3,8 +3,6 @@ styles:
     layoutRootPath: 'EXT:site_content/Resources/Private/ContentElements/Layouts/'
     partialRootPath: 'EXT:site_content/Resources/Private/ContentElements/Partials/'
     templateRootPath: 'EXT:site_content/Resources/Private/ContentElements/Templates/'
-
-page:
   
   meta:
     viewport: 'width=device-width, initial-scale=1'
